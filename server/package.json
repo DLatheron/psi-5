@@ -1,0 +1,13 @@
+{
+    "type": "module",
+    "devDependencies": {
+        "@types/lodash": "^4.17.6",
+        "lodash": "^4.17.21",
+        "ts-node": "^10.9.2",
+        "tsx": "^4.16.2",
+        "typescript": "^5.5.3"
+    },
+    "dependencies": {
+        "zod": "^3.23.8"
+    }
+}
