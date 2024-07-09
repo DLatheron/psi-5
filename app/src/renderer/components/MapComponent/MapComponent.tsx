@@ -33,6 +33,8 @@ export function MapComponent(props: MapComponentProps) {
    
             // Do rendering here...
             context!.clearRect(0, 0, width, height);
+            context!.fillStyle = 'black';
+            context!.fillRect(0, 0, width, height);
 
             const drawing = new Image(); drawing.src = TestShip
             const halfWidth = drawing.width / 2;
@@ -50,7 +52,7 @@ export function MapComponent(props: MapComponentProps) {
         }
     
         requestAnimationFrame(loop);
-    }, []);
+    }, [width, height]);
 
     return (
         <div 
